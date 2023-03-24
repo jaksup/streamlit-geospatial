@@ -22,7 +22,7 @@ st.title("Heatmap")
 
 with st.expander("See source code"):
     with st.echo():
-        filepath = "https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_cities.csv"
+        filepath = "https://raw.githubusercontent.com/jaksup/streamlit-geospatial/master/data/amsterdam2022s__count__grouped_by_lon_and_lat_2023-03-06T10_12_20.658764Z.csv"
         m = leafmap.Map(center=[40, -100], zoom=4, tiles="stamentoner")
         m.add_heatmap(
             filepath,
