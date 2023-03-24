@@ -23,12 +23,12 @@ st.title("Heatmap")
 with st.expander("See source code"):
     with st.echo():
         filepath = "https://raw.githubusercontent.com/jaksup/streamlit-geospatial/master/data/amsterdam2022s__count__grouped_by_lon_and_lat_2023-03-06T10_12_20.658764Z.csv"
-        m = leafmap.Map(center=[40, -100], zoom=4, tiles="stamentoner")
+        m = leafmap.Map(center=[4.72, 52], zoom=4, tiles="stamentoner")
         m.add_heatmap(
             filepath,
-            latitude="latitude",
-            longitude="longitude",
-            value="pop_max",
+            latitude="Lat",
+            longitude="Lon",
+            value="Count",
             name="Heat map",
             radius=20,
         )
